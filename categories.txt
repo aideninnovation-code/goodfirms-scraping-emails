@@ -1,0 +1,2 @@
+# One GoodFirms category URL per line. Lines starting with # are ignored.
+https://www.goodfirms.co/companies/web-development-agency

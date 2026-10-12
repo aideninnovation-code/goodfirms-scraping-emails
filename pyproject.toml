@@ -1,0 +1,8 @@
+[project]
+name = "goodfirms-scraper"
+version = "0.1.0"
+requires-python = ">=3.12"
+dependencies = [
+    "curl-cffi>=0.16.3",
+    "selectolax>=1.0.0",
+]
