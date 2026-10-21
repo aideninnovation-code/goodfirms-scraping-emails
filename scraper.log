@@ -1,0 +1,61 @@
+2026-10-13 11:10:02,610 | INFO | Starting Kompass company scraper.
+2026-10-13 11:10:02,611 | INFO | Requesting page 1: https://ca.kompass.com/searchCompanies/scroll?pageNbre=1
+2026-10-13 11:10:03,456 | ERROR | Network failure on page 1. Stopping to preserve saved data.
+Traceback (most recent call last):
+  File "/home/awaitingfrost/workspace/aiden/goodfirms-scraping-companies/kompas-scaper.py", line 331, in main
+    html = fetch_page(page_number)
+           ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/awaitingfrost/workspace/aiden/goodfirms-scraping-companies/kompas-scaper.py", line 284, in fetch_page
+    response.raise_for_status()
+  File "/home/awaitingfrost/workspace/aiden/goodfirms-scraping-companies/.venv/lib/python3.12/site-packages/requests/models.py", line 1167, in raise_for_status
+    raise HTTPError(http_error_msg, response=self)
+requests.exceptions.HTTPError: 403 Client Error: Forbidden for url: https://ca.kompass.com/searchCompanies/scroll?tab=cmp&pageNbre=1
+2026-10-13 11:10:03,458 | INFO | Scraper finished. Pages processed=0, new records=0, duplicate encounters=0, total unique companies=0
+2026-10-13 11:10:03,458 | INFO | JSON output: /home/awaitingfrost/workspace/aiden/goodfirms-scraping-companies/kompass_companies.json
+2026-10-13 11:10:03,458 | INFO | Log file: /home/awaitingfrost/workspace/aiden/goodfirms-scraping-companies/scraper.log
+2026-10-13 11:11:31,655 | INFO | Loaded 0 existing records.
+2026-10-13 11:11:31,656 | INFO | Requesting page 1
+2026-10-13 11:11:32,273 | INFO | Page 1 returned HTTP 403
+2026-10-13 11:11:32,273 | ERROR | HTTP 403 Forbidden on page 1. The server denied access. Stop scraping and check authorization or the approved access method. Response content type: text/html;charset=utf-8
+2026-10-13 11:11:32,274 | ERROR | Stopping at page 1. Existing JSON data will be preserved.
+2026-10-13 11:11:32,274 | INFO | Finished. Pages processed=0, new records=0, total unique records=0
+2026-10-13 11:11:32,274 | INFO | JSON: /home/awaitingfrost/workspace/aiden/goodfirms-scraping-companies/kompass_companies.json
+2026-10-13 11:11:32,274 | INFO | Log: /home/awaitingfrost/workspace/aiden/goodfirms-scraping-companies/scraper.log
+2026-10-13 11:13:04,853 | INFO | Loaded 0 existing records.
+2026-10-13 11:13:04,854 | INFO | Requesting page 1
+2026-10-13 11:13:04,854 | ERROR | Unexpected scraper error.
+Traceback (most recent call last):
+  File "/home/awaitingfrost/workspace/aiden/goodfirms-scraping-companies/kompas-scaper.py", line 300, in main
+    html = fetch_page(page_number)
+           ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/awaitingfrost/workspace/aiden/goodfirms-scraping-companies/kompas-scaper.py", line 129, in fetch_page
+    logger.info("HTTP status: %s", response.status_code)
+                                   ^^^^^^^^
+UnboundLocalError: cannot access local variable 'response' where it is not associated with a value
+2026-10-13 11:13:04,855 | INFO | Finished. Pages processed=0, new records=0, total unique records=0
+2026-10-13 11:13:04,855 | INFO | JSON: /home/awaitingfrost/workspace/aiden/goodfirms-scraping-companies/kompass_companies.json
+2026-10-13 11:13:04,855 | INFO | Log: /home/awaitingfrost/workspace/aiden/goodfirms-scraping-companies/scraper.log
+2026-10-13 11:13:32,366 | INFO | Loaded 0 existing records.
+2026-10-13 11:13:32,366 | ERROR | Unexpected scraper error.
+Traceback (most recent call last):
+  File "/home/awaitingfrost/workspace/aiden/goodfirms-scraping-companies/kompas-scaper.py", line 300, in main
+    html = fetch_page(page_number)
+           ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/awaitingfrost/workspace/aiden/goodfirms-scraping-companies/kompas-scaper.py", line 128, in fetch_page
+    if response.status_code == 403:
+       ^^^^^^^^
+UnboundLocalError: cannot access local variable 'response' where it is not associated with a value
+2026-10-13 11:13:32,367 | INFO | Finished. Pages processed=0, new records=0, total unique records=0
+2026-10-13 11:13:32,367 | INFO | JSON: /home/awaitingfrost/workspace/aiden/goodfirms-scraping-companies/kompass_companies.json
+2026-10-13 11:13:32,367 | INFO | Log: /home/awaitingfrost/workspace/aiden/goodfirms-scraping-companies/scraper.log
+2026-10-13 11:14:15,627 | INFO | Loaded 0 existing records.
+2026-10-13 11:14:15,627 | INFO | Requesting page 1
+2026-10-13 11:14:16,340 | INFO | HTTP status: 403
+2026-10-13 11:14:16,340 | INFO | Final URL: https://ca.kompass.com/?pageNbre=1
+2026-10-13 11:14:16,341 | INFO | Content-Type: text/html;charset=utf-8
+2026-10-13 11:14:16,341 | ERROR | 403 response preview: <html lang="en"><head><title>kompass.com</title><style>#cmsg{animation: A 1.5s;}@keyframes A{0%{opacity:0;}99%{opacity:0;}100%{opacity:1;}}</style></head><body style="margin:0"><p id="cmsg">Please enable JS and disable any ad blocker</p><script data-cfasync="false">var dd={'rt':'c','cid':'AHrlqAAAAAMAjH-S_TAe8OYAGyJv_Q==','hsh':'DC8D59238BB987E41E51119402D05A','t':'fe','qp':'','s':39890,'e':'934a26216e0a9773dcf02cc8280baba87df415e4a9d57884ea056ef2d758c69259082a5107c78bace33d52a0a57a6855','host':'geo.captcha-delivery.com','cookie':'dpj5tnQEg2sL7rz2MiFjlow40DMX0Fjn9sxGobYM5J21uSP3JtTWXNXObq5Hr1UwHAbz1IftBwC_z5hkaA2UJ3kZ67qlPHVynEKc7KOaJ7gGV6GqTf3JIvdVvMBdrEgf'}</script><script data-cfasync="false" src="https://ct.captcha-delivery.com/c.js"></script></body></html>
+2026-10-13 11:14:16,342 | ERROR | Kompass denied access. Check authorization or use an approved access method.
+2026-10-13 11:14:16,343 | ERROR | Stopping at page 1. Existing JSON data will be preserved.
+2026-10-13 11:14:16,343 | INFO | Finished. Pages processed=0, new records=0, total unique records=0
+2026-10-13 11:14:16,344 | INFO | JSON: /home/awaitingfrost/workspace/aiden/goodfirms-scraping-companies/kompass_companies.json
+2026-10-13 11:14:16,344 | INFO | Log: /home/awaitingfrost/workspace/aiden/goodfirms-scraping-companies/scraper.log
